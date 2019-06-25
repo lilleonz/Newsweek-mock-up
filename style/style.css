@@ -123,21 +123,11 @@ a {
 	outline: 0;
 }
 
-a:-webkit-any-link {
-	cursor: pointer;
-}
-
 a::after {
 	color: #000;
 }
-
-form {
-	display: block;
-	margin-top: 0em;
-}
-
-form#search-block-form--2 input {
-	vertical-align: middle;
+.date {
+	color: white;
 }
 
 strong, b {
@@ -147,11 +137,11 @@ strong, b {
 ul, menu, dir {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
+    /* margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 40px; */
 }
 
 .main {
@@ -254,7 +244,7 @@ h4 {
 	font-size: 26px;
     vertical-align: top;
     text-align: center;
-    display: block;
+    display: inline-block;
     font-family: "Genericons";
     cursor: pointer;
 }
@@ -316,6 +306,12 @@ header {
 	position: relative;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.col-2 {
+	max-width: 27% !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 .colwrap .col1, .colwrap .col2, .colwrap .col3, .colwrap .col4 {
@@ -422,6 +418,16 @@ ul.page-nav a {
 	display: block;
 }
 
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+}
+
 .lk-3, .lk-2, .lk-1 {
 	position: relative;
 	font: bold 14px/14px "Roboto Condensed", sans-serif;
@@ -439,6 +445,8 @@ picture {
 	display:block;
 	position: relative;
 	overflow: hidden;
+	width: 397px;
+	height: 265px;
 }
 
 .feature2 .h2 {
@@ -619,6 +627,19 @@ img {
 
 .magazine .wrap {
 	position: relative;
+}
+
+.magazine .wrap .category {
+    display: block;
+    font: bold 16px/33px "Roboto Condensed",sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .magazine .lk {
@@ -876,6 +897,10 @@ picture.lazysize img {
     line-height: 24px;
 }
 
+/* .page-footer .footer-links .row {
+	list-style-type: none;
+	width: 100%;
+} */
 .page-footer .footer-links {
     display: -webkit-flex;
     display: flex;
@@ -1002,11 +1027,11 @@ picture.lazysize img {
 
 @media screen and (min-width: 992px) {
 	.header-middle {
-		transform: translate (-50%, 0);
+		transform: translate(-50%, 0);
 		position: absolute;
 		z-index: 3;
 		top: 0;
-		left: 50%;
+		left: 30%;
 	}
 }
 
@@ -1151,20 +1176,20 @@ picture.lazysize img {
 	}
 }
 
-@media sceen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.flex-sm {
 		display: -webkit-flex;
 		display: flex;
 	}
 }
 
-@media sceen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.flex-sm-3 {
 		width: 25%;
 	}
 }
 
-@media sceen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.flex-sm-9 {
 		width: 75%;
 	}
