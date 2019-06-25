@@ -86,8 +86,8 @@ table {
 }
 
 body {
-	background-color: #333;
-	color: #f4f5f6;
+	background-color: #f4f5f6;
+	color: #333;
 	font-size: 13px;
 	line-height: 18px;
 	font-family: 'Roboto', sans-serif;
@@ -193,6 +193,10 @@ h4 {
 	position: relative;
 }
 
+.page-header .header-middle {
+	background-color: #f72210;
+}
+
 .page-header .lk-2, .page-header .lk-1 {
 	color: white;
 }
@@ -204,6 +208,18 @@ h4 {
 
 .page-header .lk-3 svg {
 	fill: #f72210;
+}
+
+.lk-3 svg {
+	display: none;
+}
+
+.lk-3, .lk-2, .lk-1 {
+    position: relative;
+    font: bold 14px/14px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px;
 }
 
 .page-header .brand svg {
@@ -244,7 +260,6 @@ h4 {
 }
 
 header {
-	display: block;
 	position: relative;
 }
 
@@ -254,8 +269,10 @@ header {
 }
 
 .header-middle {
+	position: relative;
 	padding: 10px 15px;
 }
+
 
 .header-bottom {
 	padding-top: 15px;
@@ -373,6 +390,11 @@ header {
 
 .flex-xs-6 {
 	width: 50%;
+}
+
+.jc-fe {
+	-webkit-justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .jc-c {
@@ -908,6 +930,57 @@ picture.lazysize img {
 		padding: 20px 10px 15px;
 	}
 }
+
+@media screen and (max-width: 991px) {
+	.header-top .col-1 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top .col-2 {
+		position: absolute;
+		top: 7px;
+		right: 40px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top .lk-2 .header-top .lk-3 {
+		padding: 6px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-bottom {
+		-moz-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		-webkit-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		-moz-transform: translate(100%,0%);
+		-ms-transform: translate(100%,0%);
+		-webkit-transform: translate(100%,0%);
+		transform: translate(100%,0%);
+		filter: alpha(opacity=0);
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 220px;
+		height: 100vh;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	form#search-block-form--2 {
+		position: relative;
+		padding-right: 20px;
+		margin-left: 15px;
+		margin-right: 10px;
+	}
+}
+
 
 @media screen and (min-width: 1200px) {
 	.page-header date {
