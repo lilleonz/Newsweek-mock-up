@@ -319,6 +319,10 @@ header {
 	padding-right: 0 !important;
 }
 
+.colwrap {
+	margin-bottom: 200px;
+}
+
 .colwrap .col1, .colwrap .col2, .colwrap .col3, .colwrap .col4 {
     float: left;
     width: 100%;
@@ -791,7 +795,6 @@ picture.lazysize {
     display: block;
     background-color: #f0f0f0;
 	width: 100%;
-	height: 80px;
 }
 
 picture {
