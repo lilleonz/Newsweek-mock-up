@@ -176,6 +176,11 @@ h4 {
 	line-height: 18px;
 }
 
+section {
+	margin: 2%;
+	padding: 2%;
+}
+
 .block {
 	clear:left;
 	margin-bottom:20px;
@@ -1070,6 +1075,62 @@ picture.lazysize img {
 }
 
 @media screen and (max-width: 991px) {
+	.container {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991) {
+	.header-middle {
+		padding: 5px 15px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.content {
+		padding: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-2 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-left: 0 !important;
+		padding-right: 5px !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-3 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-1 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
 	.header-bottom {
 		-moz-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
 		-webkit-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
@@ -1099,6 +1160,11 @@ picture.lazysize img {
 	}
 }
 
+@media screen and (max-width: 991px) {
+	#block-nw-opinion {
+		position: relative !important;
+	}
+}
 
 @media screen and (min-width: 1200px) {
 	.page-header date {
@@ -1420,6 +1486,13 @@ picture.lazysize img {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.colwrap .col2 {
+		-webkit-order: 1;
+		order: 1;
+	}
+}
+
 
 @media screen and (min-width: 1200px) {
 	.col-lg-8 {
@@ -1464,5 +1537,3 @@ picture.lazysize img {
 		width: 33.33333333%;
 	}
 }
-
-
