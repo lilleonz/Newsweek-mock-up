@@ -329,7 +329,6 @@ header {
 }
 
 .col2 {
-	max-width: 50% !important;
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
@@ -1544,11 +1543,12 @@ picture.lazysize img {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
 	.col2 {
-		
+		position: relative;
 	}
 }
+
 
 @media screen and (max-width: 767px) {
 	.colwrap #sticky4>.row {
