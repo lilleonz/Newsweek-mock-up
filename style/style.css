@@ -1316,6 +1316,7 @@ picture.lazysize img {
 @media screen and (min-width: 768px) {
 	.colwrap .col2 {
 		width: 50%;
+		/* test */
 	}
 }
 
