@@ -1007,10 +1007,12 @@ picture.lazysize img {
 /* End of main css */
 
 /* Media Queries */
-@media (min-width: 768px) {
-	.container {
+@media (min-width: 1220px) {
+	.header-top {
 		max-width: 100% !important;
 	}
+
+	
 }
 
 
