@@ -323,6 +323,11 @@ header {
 	padding-right: 15px;
 }
 
+.container {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 .col1 {
 	flex: 0 0 49%;
 	max-width: 100% !important;
@@ -486,9 +491,10 @@ picture {
     border-top: 1px solid #ddd;
 }
 
-#block-nw-home-featured-more article .image {
+#block-nw-home-featured-more article .image picture {
     float: left;
-    width: 135px;
+	width: 135px;
+	height: 90px;
     margin-right: 15px;
 }
 
@@ -1077,7 +1083,7 @@ picture.lazysize img {
 	}
 }
 
-@media screen and (max-width: 991) {
+@media screen and (max-width: 991px) {
 	.header-middle {
 		padding: 5px 15px !important;
 	}
