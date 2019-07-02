@@ -1,0 +1,1604 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of css reset */
+
+/* Main css start */
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-display: swap;src:local('roboto_condensedbold'),url(https://g.newsweek.com/www/fonts/robotocondensed-bold-webfont.woff2) format('woff2'),url(https://g.newsweek.com/www/fonts/robotocondensed-bold-webfont.woff) format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-display: swap;
+	src: local('roboto_condensedregular'),url(https://g.newsweek.com/www/fonts/robotocondensed-regular-webfont.woff2) format('woff2'),url(https://g.newsweek.com/www/fonts/robotocondensed-regular-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	font-display: swap;
+	src: local('playfair_displayregular'),url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.eot);
+	font-display: swap;
+	src: url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.eot?#iefix) format('embedded-opentype'),url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.woff2) format('woff2'),url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.woff) format('woff'),url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.ttf) format('truetype'),url(https://g.newsweek.com/www/fonts/playfairdisplay-regular.svg#playfair_displayregular) format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* { 
+	box-sizing: border-box;
+	border: none;
+	list-style: none outside none;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+}
+
+body {
+	background-color: #fff;
+	color: #333;
+	font-size: 13px;
+	line-height: 18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	margin: 8px;
+	overflow-x: hidden;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+}
+
+body::before {
+	content: "";
+	display: block;
+	position: fixed;
+	top: -1px;
+	left: 0;
+	right: 0;
+	height: 1px;
+}
+
+div {
+	display: block;
+}
+
+.lazyload {
+	visibility: hidden;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	outline: 0;
+}
+
+a::after {
+	color: #000;
+}
+.date {
+	color: white;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+}
+
+.main {
+	background-color: white;
+	padding-top: 20px;
+}
+
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.menu .leaf {
+	padding: 5px;
+	border-right: 1px solid #d9d9d9;
+}
+.image a, header, footer, nav, section, article, hgroup, figure {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Condensed",sans-serif;
+    margin-bottom: 10px;
+    position: relative;
+    color: black;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+h4 {
+	font-size: 18px;
+	line-height: 18px;
+}
+
+section {
+	display: block;
+	margin: 2%;
+	padding: 2%;
+}
+
+.block {
+	clear:left;
+}
+
+.page-header {
+	z-index: 10;
+}
+
+.page-header date {
+	font: 16px/34px "Roboto Condensed", sans-serif;
+	color: white;
+}
+
+.page-header .container {
+	position: relative;
+}
+
+.page-header .header-middle {
+	background-color: #f72210;
+}
+
+.page-header .lk-2, .page-header .lk-1 {
+	color: white;
+}
+
+.page-header .lk-3 {
+	background-color: white;
+	color: #f72210;
+}
+
+.page-header .lk-3 svg {
+	fill: #f72210;
+}
+
+.lk-3 svg {
+	display: none;
+}
+
+.lk-3, .lk-2, .lk-1 {
+    position: relative;
+    font: bold 14px/14px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 6px;
+}
+
+.page-header .brand svg {
+	display: block;
+	fill: white;
+	width: 132px;
+	height: 20px;
+}
+
+.page-header .genericon-menu {
+	color: white;
+}
+
+.page-header .header-bottom {
+	background-color: white;
+	border-bottom-color: #f4f5f6;
+}
+
+.genericon-menu {
+	display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+
+.genericon {
+	font-size: 26px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    font-family: "Genericons";
+    cursor: pointer;
+}
+
+header {
+	position: relative;
+}
+
+.header-top {
+	position: relative;
+	z-index: 2;
+}
+
+.header-middle {
+	position: relative;
+	padding: 10px 15px;
+}
+
+
+.header-bottom {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	z-index: 1;
+}
+
+.helper {
+	background-color: white;
+}
+
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+    clear: both;
+}
+
+.content {
+	max-width: 1200px;
+	margin: auto;
+	background-color: #fff;
+}
+
+.container-fluid, .container {
+	max-width: 1310px;
+}
+
+.container-fluid, .container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container-fluid {
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.col1 {
+	flex: 0 0 49%;
+	max-width: 100% !important;
+}
+
+.col2 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.colwrap .col1, .colwrap .col2, .colwrap .col3, .colwrap .col4 {
+    float: left;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.feature2 .block-title {
+	color: rgba(3, 3, 3, .4);
+}
+
+.feature2 .h2 {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.feature2 article {
+	padding-bottom: 20px;
+}
+
+.feature2 .wrap {
+	position: relative;
+	min-height: 33px;
+	margin-bottom: 10px;
+}
+
+.feature2 h4 {
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.feature2 .block-title {
+    color: rgba(3,3,3,.4);
+}
+
+.block-title.red {
+    color: #f72210;
+}
+
+.block-title {
+	font: bold 16px/16px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    color: rgba(12,11,11,.8);
+}
+
+.ai-c {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.ai-fe {
+	align-items: flex-end;
+}
+
+.fd-c {
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
+.flex-xs {
+	display: flex;
+}
+
+.flex-xs-6 {
+	width: 50%;
+}
+
+.jc-fe {
+	-webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+ul.page-nav {
+	font-size: 21px;
+	line-height: 24px;
+	font-weight: bold;
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+ul li.expanded, ul li.collapsed, ul li.leaf {
+    list-style: none;
+    margin: 0;
+}
+
+ul.page-nav a {
+	display: block;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px; */
+}
+
+.lk-3, .lk-2, .lk-1 {
+	position: relative;
+	font: bold 14px/14px "Roboto Condensed", sans-serif;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 10px;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+picture {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	width: 397px;
+}
+
+.feature2 .h2 {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.front #block-nw-emea-nw-emea-home-featured, .front #block-nw-home-featured-stories {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.picture-galleries .image {
+	position:relative;
+	}
+
+#block-nw-home-featured-more article {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-top: 1px solid #ddd;
+}
+
+#block-nw-home-featured-more article .image picture {
+    float: left;
+	width: 135px;
+	height: 90px;
+    margin-right: 15px;
+}
+
+#block-nw-home-featured-more article .info {
+	-webkit-flex:1;
+	flex:1;
+}
+
+#block-nw-home-featured-story .related {
+	font-size:19px;
+	line-height:22px;
+}
+
+.subfeature2 {
+    font: bold 17px/21px "Roboto Condensed",sans-serif;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.subfeature2 .block-title {
+	color: rgba(3, 3, 3, .4);
+}
+
+.subfeature2 li:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.subfeature2 li {
+	border-top: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.subfeature2 li:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
+
+.subfeature2 li {
+	border-top: 1px solid #ddd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.subfeature2 .headshot {
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    background: url(https://g.newsweek.com/www/images/opinion-headshot-bg.png) center no-repeat #f72210;
+    overflow: hidden;
+    position: relative;
+}
+
+.subfeature2 .image {
+	-webkit-flex: none;
+    flex: none;
+    width: 135px;
+    margin-right: 15px;
+}
+
+.subfeature2 .info {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.subfeature2 .byline {
+    font-size: 14px;
+    line-height: 14px;
+    color: #555;
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+.subfeature2 .headshot a {
+	display: block;
+	height: 100%;
+}
+
+.subfeature2 .headshot img {
+	-moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: auto;
+    max-width: inherit;
+    height: 63px;
+    position: absolute;
+    left: 50%;
+}
+
+.subfeature2 .headshot {
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+    background: url(https://g.newsweek.com/www/images/opinion-headshot-bg.png) center no-repeat #f72210;
+    overflow: hidden;
+    position: relative;
+}
+
+.subfeature2 {
+    font: bold 14px/14px "Roboto Condensed",sans-serif;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.image img {
+	width: 50%;
+}
+
+img {
+	vertical-align: middle;
+	height: auto;
+}
+
+.newsletter-signup {
+	max-width: 300px;
+    margin: 0 auto 30px;
+    border: 1px solid #e5e5e5;
+    background-color: #f4f5f6;
+    padding: 20px;
+}
+
+.n-title {
+    font: bold 19px/19px "Roboto Condensed",sans-serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.n-title .icon-n {
+    -webkit-flex: none;
+    flex: none;
+    display: block;
+    width: 29px;
+    height: 28px;
+    background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
+    margin-right: 10px;
+}
+
+.newsletter-signup .lk {
+    margin-bottom: 10px;
+}
+
+.lk {
+    display: inline-block;
+    padding: 10px 10px 10px 12px;
+    color: white;
+    font: bold 18px/18px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: #666;
+}
+
+.lk-5 {
+    color: #333;
+    font: bold 15px/15px "Roboto Condensed",sans-serif;
+}
+
+.magazine {
+	margin-bottom: 30px;
+}
+
+.magazine {
+	padding-top: 10px;
+}
+
+.magazine .wrap {
+	position: relative;
+}
+
+.magazine .wrap .category {
+    display: block;
+    font: bold 16px/33px "Roboto Condensed",sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    padding: 0 10px;
+    background-color: rgba(255,255,255,.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.magazine .lk {
+    display: block;
+    background-color: #f4f5f6;
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.lk {
+    display: inline-block;
+    padding: 10px 10px 10px 12px;
+    color: white;
+    font: bold 18px/18px "Roboto Condensed",sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    background-color: #666;
+}
+
+.magazine .lk::after {
+    background-image: url(https://g.newsweek.com/www/images/icon-arrow-right-black.svg);
+}
+
+.lk::after {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    margin-left: 10px;
+    background: url(https://g.newsweek.com/www/images/icon-arrow-right.svg) center/contain no-repeat;
+}
+
+.image a {
+	display: block;
+}
+
+.magazine article .category {
+    font: bold 16px/26px "Roboto Condensed",sans-serif;
+    color: #f72210;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.magazine article .category span:first-of-type {
+    padding: 0 7px;
+    background-color: #f72210;
+    color: white;
+    margin-right: 7px;
+}
+
+.magazine article .category span {
+    display: inline-block;
+}
+
+.magazine h5 {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+#block-nw-magazine-current-issue .n-title {
+	padding-top: 8px;
+	margin-bottom:8px;
+}
+
+#block-nw-editors-pick {
+	margin-bottom: 20px; 
+}
+
+#block-nw-editors-pick .n-title {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+}
+
+#block-nw-home-featured-stories .related {
+	font-size:17px;
+	line-height:20px;
+}
+
+.nw.picture-galleries .n-title {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 12px;
+}
+
+.nw.picture-galleries .n-title .icon-n {
+    position: relative;
+    margin-right: 13px;
+}
+
+.nw.picture-galleries article {
+    padding-bottom: 40px;
+}
+
+.nw.picture-galleries .count-link {
+	width:70px;
+	height:52px;
+	display:block;
+	position:absolute;
+	bottom:0;
+	left:0;
+	font-weight:bold;
+	font-size:20px;
+	line-height:58px;
+	text-indent:5px;
+	text-align:center;
+	background:url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+	color:#e9212e;
+}
+
+.nw.picture-galleries .image {
+	margin-bottom:20px;
+}
+	
+.nw.picture-galleries .n-title .icon-n::after {
+	border-bottom:3px solid red;
+	border-right:3px solid red;
+	display:block;
+	content:"";
+	width:26px;
+	height:25px;
+	position:absolute;
+	bottom:-4px;
+	right:-4px;
+}
+
+picture.lazysize {
+    display: block;
+    background-color: #f0f0f0;
+	width: 100%;
+}
+
+picture {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+picture.lazysize img.lazyloaded {
+    opacity: 1;
+}
+
+picture.lazysize img {
+    width: 100%;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: opacity 500ms ease-in-out 100ms;
+    -moz-transition: opacity 500ms ease-in-out 100ms;
+    -o-transition: opacity 500ms ease-in-out 100ms;
+    transition: opacity 500ms ease-in-out 100ms;
+}
+
+.nw.picture-galleries .count-link {
+    width: 70px;
+    height: 52px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 58px;
+    text-indent: 5px;
+    text-align: center;
+    background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) 0 0/contain no-repeat;
+    color: #e9212e;
+}
+
+.section-picks .block-title {
+    border-top: 1px solid #d9d9d9;
+    color: #f72210;
+    padding-top: 25px;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: none;
+}
+
+.subscribe-block {
+	position: relative;
+	padding-top: 40px;
+}
+
+.subscribe-block .col-lg-4,.subscribe-block .col-lg-8 {
+	margin-bottom: 40px;
+}
+
+.subscribe-block::before {
+	content: "";
+	display: block;
+	background-color: #f4f5f6;
+	height: 2px;
+	position: absolute;
+	top: 0;
+	left: -15px;
+	right: -15px;
+}
+
+.subscribe-block .coll {
+	background-color: #f4f5f6;
+	padding: 24px 20px 20px;
+}
+
+.subscribe-block .col-r .info { 
+	border: 1px solid #ebebeb;
+	padding:20px;
+}
+
+.subscribe-block .col-l .image {
+	position: relative;
+	padding-bottom: 13px; 
+	padding-right: 90px;
+}
+
+.subscribe-block h3 {
+	line-height: 28px; 
+}
+
+.subscribe-block h3 {
+	margin-bottom: 15px;
+}
+
+.subscribe-block p {
+	font: 300 15px/21px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin-bottom: 25px;
+}
+
+.subscribe-block .lk {
+	margin-bottom: 0;
+}
+
+.subscribe-block .mag-thumb {
+	width: 170px;
+	height: 228px;
+}
+
+.subscribe-block .mag-thumb.current {
+	position: absolute; 
+	top: 13px;
+	left:80px;
+}
+
+.subscribe-block .coll {
+    background-color: #f4f5f6;
+	padding: 24px 20px 20px;
+}
+
+.subscribe-block h3 {
+    margin-bottom: 15px;
+}
+
+.subscribe-block h3 {
+    line-height: 28px;
+}
+
+.fn .flex-n {
+	-webkit-box-flex: none;
+	flex: none;
+}
+
+.f1 {
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.page-footer {
+	border-top: 2px solid #f4f5f6;
+	background-color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.page-footer .brand svg {
+    display: block;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    fill: #f72210;
+}
+
+.page-footer .copyright {
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.page-footer .social {
+	color: #666;
+	margin-bottom: 12px;
+}
+
+.page-footer .social li:first-child {
+    margin-left: 0;
+}
+
+.page-footer .social li {
+    margin-left: 10px;
+}
+
+.page-footer .social .genericon {
+    line-height: 24px;
+}
+
+.page-footer .footer-links {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 6px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #666;
+}
+
+.info h1, .info h2, .info h3, .info h4, .info h5, .info h6 {
+    display: inline-block;
+}
+
+
+/* End of main css */
+
+/* Media Queries */
+@media (min-width: 1220px) {
+	.header-top {
+		max-width: 100% !important;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 38px;
+		line-height: 38px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.h2 {
+		font-size: 33px;
+		line-height: 33px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+	h4 {
+		font-size: 22px;
+		line-height: 22px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float: left;
+	}
+}
+
+
+@media screen and (min-width: 992px) {
+	.page-header .header-top {
+		background-color: #f72210;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header-top {
+		height: 95px;
+		padding: 20px 10px 15px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top .col1 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top .col2 {
+		position: absolute;
+		top: 7px;
+		right: 40px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-top .lk-2 .header-top .lk-3 {
+		padding: 6px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-middle {
+		padding: 5px 15px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.content {
+		padding: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-2 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-left: 0 !important;
+		padding-right: 5px !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-3 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.lk-1 {
+		position: relative;
+		font: bold 12px/12px "Roboto Condensed", sans-serif;
+		text-transform: uppercase;
+		display: flex;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.header-bottom {
+		-moz-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		-webkit-box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+		-moz-transform: translate(100%,0%);
+		-ms-transform: translate(100%,0%);
+		-webkit-transform: translate(100%,0%);
+		transform: translate(100%,0%);
+		filter: alpha(opacity=0);
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+		top: 40px;
+		right: 0;
+		width: 220px;
+		height: 100vh;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	form#search-block-form--2 {
+		position: relative;
+		padding-right: 20px;
+		margin-left: 15px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#block-nw-opinion {
+		position: relative !important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.page-header date {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-header date {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-header .header-middle {
+		background-color: #f72210;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header-middle {
+		transform: translate(-50%, 0);
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		left: 30%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.lk-2 {
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.lk-3 .lk-2 .lk-1 {
+		font-size: 18px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.lk-3 {
+		padding-left: 12px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.lk-3 svg {
+		display: inline-block;
+		width: 8px;
+		height: 14px;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-header .brand svg {
+		fill: white;
+		width: 396px;
+		height: 60px;
+		margin: 10px auto 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.genericon-menu {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.page-header .header-bottom {
+		padding-right: 160px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header-bottom {
+		position: relative;
+		display: block;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.flex-md {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	ul.page-nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	ul.page-nav li:first-child {
+		border-left-width: 0;
+	}
+} 
+
+@media screen and (min-width: 992px) {
+	.page-header ul.page-nav li {
+		border-left-color: #d9d9d9;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	ul.page-nav li {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		text-align: center;
+		border-left-width: 1px;
+		border-left-style: solid;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.container-fluid {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.colwrap .col4 {
+		width: 71%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.colwrap .col1 {
+		width: 41%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.colwrap .col1 {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.colwrap .col2 {
+		width: 55%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.colwrap .col2 {
+		width: 50%;
+		/* test */
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#block-nw-subfeatured {
+		display: none;
+	}
+
+	.sponsor {
+		display: none;
+	}
+
+	#block-fusion-newletters-fusion-newsletter-signup {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.colwrap .col3 {
+		width: 29%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#block-nw-home-featured-more article .image {
+		margin-bottom: 10px;
+	}
+}
+
+@media(min-width:481px) and (max-width:767px) {
+	#block-nw-home-featured-more article .image {
+		width:258px;
+	}
+}
+
+@media screen and (min-width:768px) {
+	#block-nw-home-featured-story picture {
+		display:block;
+		position:relative;
+		padding-bottom:76.5%;
+		overflow:hidden;
+	}
+	#block-nw-home-featured-story picture img {
+		-moz-transform:translate(-50%,-50%);
+		-ms-transform:translate(-50%,-50%);
+		-webkit-transform:translate(-50%,-50%);
+		transform:translate(-50%,-50%);
+		position:absolute;
+		top:50%;
+		left:50%;
+		height:100%;
+		max-width:inherit;
+		width:auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.colwrap .col3 {
+		width: 29%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex-sm {
+		display: -webkit-flex;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex-sm-3 {
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.flex-sm-9 {
+		width: 75%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.magazine .n-title {
+		border-bottom: 1px solid #d9d9d9;
+		padding-bottom: 8px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.col-sm-4 {
+		width: 33.33333333%;
+	}
+}
+
+
+@media screen and (min-width: 768px) {
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.magazine h5 {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.magazine .bottom {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-3 {
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.col-sm-6 {
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.nw.picture-galleries article:nth-of-type(3n+1) {
+		clear: left;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.col-sm-4 {
+		width: 33.33333333%;
+	}
+}
+
+@media screen and (min-width:768px) {
+	.subscribe-block .col-l .info {
+		padding-left: 30px;
+	}
+	.subscribe-block .col-r .image {
+		width: 48%; 
+	}
+	.subscribe-block .col-r .info {
+		border-left-width: 0; 
+	}
+	.subscribe-block .col-r .image {
+		max-width: 191px;
+	}
+	.subscribe-block .col-l,.subscribe-block .col-r .info {
+		padding: 30px;
+	}
+}
+
+@media screen and (min-width:992px) {
+	.subscribe-block::before {
+		left:-30px;right: -30px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.subscribe-block .col-l .image {
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+	.subscribe-block .col-r .image {
+		height: 160px;
+	}
+	.subscribe-block .col-l,.subscribe-block .col-r {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.subscribe-block .col-l, .subscribe-block .col-r .info {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.colwrap .col2 {
+		order: 1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.colwrap .col1 {
+		order: 2;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.col-lg-8 {
+		width: 66.66666667%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+		float: left;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-7 {
+		width: 58.33333333%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.flex-md {
+		display: -webkit-flex;
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-offset-1 {
+		margin-left: 8.33333333%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.col-md-4 {
+		width: 33.33333333%;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.col2 {
+		position: relative;
+	}
+}
+
+
+@media screen and (max-width: 767px) {
+	.colwrap #sticky4>.row {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.colwrap #sticky2>.row {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+		overflow: hidden;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.colwrap #sticky1, .colwrap #sticky2, .colwrap #sticky3, .colwrap #sticky4 {
+		position: static !important;
+	}
+}
